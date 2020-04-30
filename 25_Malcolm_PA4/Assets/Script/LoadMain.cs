@@ -8,13 +8,16 @@ public class LoadMain : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene("SampleScene");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Time.time >= 1)
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 }
 
